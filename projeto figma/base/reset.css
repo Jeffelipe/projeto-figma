@@ -1,0 +1,59 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .tarefa {
+    width: 1024px;
+    border: 1px solid #5c5c5c;
+    border-radius: 16px;
+    padding: 16px;
+  }
+  
+  .descrição_tarefa {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  h2 {
+    border-right: 1px #5c5c5c solid;
+    padding-right: 16px;
+  }
+  
+  .etiqueta {
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 4px;
+  }
+  
+  .etiquetas {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .etiqueta_prioridade {
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .etiqueta--alta {
+    background-color: red;
+  }
+  
+  .etiqueta--media {
+    background-color: yellow;
+  }
+  
+  .etiqueta--baixa {
+    background-color: green;
+  }
+  
