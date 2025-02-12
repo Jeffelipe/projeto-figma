@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="base/global.css"> 
    
     <title>Tarefas</title>
-    <style>
+    <!--<style>
         body {
             font-family: Arial, sans-serif;
             display: flex;
@@ -93,52 +93,82 @@
             display: flex;
             align-items: center;
         }
-    </style>
+    </style>-->
 </head>
-<body>
 
-<main>
-    <div class="container">
-        <div class="flex-container">
-            <div class="titulo-container">
-                <label for="titulo">Título</label>
-                <input type="text" id="titulo" placeholder="Ex.: Revisar código crítico">
+<body>
+    <form class="formulario-tarefas">
+        <div class="formulario-tarefas--linha-inteira">
+            <div class="formulario-tarefas--linha-metade">
+                <div class="formulario-tarefas--coluna">
+                    <label for="titulo">Título</label>
+                    <input type="text" placeholder="Ex.: Revisar código crítico">
+                </div>
             </div>
-            <div class="prioridade-container">
-                <label for="prioridade">Prioridade</label>
-                <select id="prioridade">
+
+            <div class="formulario-tarefas--linha-metade">
+                <div class="formulario-tarefas--coluna">
+                    <label>Prioridade </label>
+                    <select>
                     <option>Alta</option>
                     <option>Média</option>
                     <option>Baixa</option>
                 </select>
-            </div>
-            <div class="data-container">
+                
+            </div> 
+
+            <div class="formulario-tarefas--coluna">
                 <label for="data">Data</label>
                 <input type="date" id="data">
+
+
+                   
+        </div>
+             <div class="formulario-tarefas--linha-inteira">
+             <div class="formulario-tarefas--coluna">              
+                    <label class="descricao">Descrição</label>
+                    <textarea id="text" placeholder="Revisar bugs críticos no módulo principal."></textarea>
+
+            <div class="formulario-tarefas--coluna"> 
+                    <label>Responsável(is):</label>
+                    <div class="conteiner-checkbox">
+                            <div class="conteiner_checkbox--item">
+                                <input type="checkbox" id="cb1"> 
+                                    <label for="cb1">Alice</label>
+                                 </div>
+                            <div class="conteiner_checkbox--item">
+                                <input type="checkbox" id="cb2"> 
+                                    <label for="cb2">Carlos</label>
+                                </div>
+                            <div class="conteiner_checkbox--item">
+                                <input type="checkbox" id="cb3"> 
+                                    <label for="cb3">Fabiano</label>
+                                </div>
+                            <div class="conteiner_checkbox--item">
+                                <input type="checkbox" id="cb4"> 
+                                    <label for="cb4">Fernanda</label>
+                                </div>
+                            <div class="conteiner_checkbox--item">
+                                <input type="checkbox" id="cb5"> 
+                                    <label for="cb5">Luísa</label>
+                                </div>
+                            <div class="conteiner_checkbox--item">
+                                <input type="checkbox" id="cb6"> 
+                                    <label for="cb6">Marcos </label>
+                                </div>  
+             
             </div>
-        </div>
+    </form>
 
-        <label for="descricao">Descrição</label>
-        <textarea id="descricao" placeholder="Revisar bugs críticos no módulo principal."></textarea>
 
-        <div class="form-group">
-            <legend>Responsável(is):</legend>
-            <div class="checkbox-group">
-                <label><input type="checkbox"> Alice</label>
-                <label><input type="checkbox"> Carlos</label>
-                <label><input type="checkbox"> Fabiano</label>
-                <label><input type="checkbox"> Fernanda</label>
-                <label><input type="checkbox"> Luísa</label>
-                <label><input type="checkbox"> Marcos</label>
-            </div>
+            <div class="buttons">
+                    <button class="clear-btn">Limpar</button>
+                    <button class="add-btn">Adicionar</button>
         </div>
-            
-        <div class="buttons">
-            <button class="clear-btn">Limpar</button>
-            <button class="add-btn">Adicionar</button>
-        </div>
-    </div>
-
+<main>
+                
+                
+     </main> 
 
 <!--
 <li class="tarefa">
@@ -204,11 +234,21 @@
 </li>
 -->
 
-</main>
+
 
 <script src="js/app.js" module></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 
 
 
